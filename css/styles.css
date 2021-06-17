@@ -414,6 +414,19 @@ a {
   margin-top: 1rem;
 }
 
+.media--row {
+  flex-direction: column;
+}
+
+.media--row .media__body {
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+.media--row .media__image {
+  margin-left: 1rem;
+}
+
 /* Quotes */
 .quote {
   font-size: 3rem;
@@ -767,5 +780,40 @@ a {
 
   .block-plans .plan--popular:hover {
     transform: scale(1.15);
+  }
+}
+
+/* Features */
+.feature {
+  margin-bottom: 5rem;
+}
+
+.feature__image {
+  display: flex;
+  align-items: center;
+}
+
+.feature__image img {
+  width: 100%;
+}
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .feature {
+    display: flex;
+    flex: 1;
+    gap: 4rem;
+    margin: 12rem 0;
+  }
+
+  .feature:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+  .feature:first-of-type {
+    margin-top: 6rem;
   }
 }
