@@ -888,6 +888,7 @@ a {
   color: #fff;
   opacity: 0.3;
 }
+
 .list .block--dark {
   background-color: #232323;
   color: #fff;
@@ -932,4 +933,9 @@ a {
   .footer__heading {
     font-size: 1.6rem;
   }
+}
+
+/* Singup */
+.callout-signup {
+  transform: translateY(3rem);
 }
